@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cta %}
+<div class="container hero">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                <h1 style="color: #333333">Advanced Healthcare Solutions for Patients of All Generations.</h1>
+                <p style="color: #333333"> We offer cutting-edge healthcare options at our hospital to meet the various demands of patients across all generations. We provide superior medical care with a patient-centered approach for everyone, from babies to elderly, guaranteeing each person's utmost wellbeing. </p>
+                    <a href="{% url 'appointment' %}" class="btn btn-secondary btn-lg action-button" type="button">Book an appointment</a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock cta %}
+
+{% block content %}
+<section class="container py-5"  style="margin-block:200px;" id="team">
+    <div class="row text-center ">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Our Doctors</h1>
+            <p class="lead">Our hospital has a group of highly qualified medical professionals committed to providing excellent care in all areas..
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4 " style="height: 100%;"><img src="{% static 'img/team1.png' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"style="height: 200px; width: 200px;">
+                    <h5 class="mb-0 text-center">Dr Amit Prakash</h5>
+                    <span class="small text-uppercase text-muted text-center">Head of Dermatologists</span>
+                    <span class="small text-uppercase text-muted text-center">MBBS,MS</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4" style="height: 100%;"><img src="{% static 'img/team2.png' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"style="height: 200px; width: 200px;">
+                    <h5 class="mb-0 text-center">Dr R.K.Porwal </h5>
+                    <span class="small text-uppercase text-muted text-center mt-3">Head of Cardiologists</span>
+                    <span class="small text-uppercase text-muted text-center">MBBS,MS</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"style="height: 100%;"><img src="{% static 'img/team3.png' %}" alt="" class=" mh-100img-fluid rounded-circle mb-5 img-thumbnail shadow-sm" style="height: 200px; width: 200px;">
+                    <h5 class="mb-0 text-center">Dr Mayank Ahuja</h5>
+                    <span class="small text-uppercase text-muted text-center mt-3">Head of Ent</span>
+                    <span class="small text-uppercase text-muted text-center">MBBS,MS</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4" style="height: 100%;"><img src="{% static 'img/team4.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"style="height: 200px; width: 200px;">
+                    <h5 class="mb-0 text-center">Dr Amit Kumar</h5>
+                    <span class="small text-uppercase text-muted text-center">Head of Gastroenterologists</span>
+                    <span class="small text-uppercase text-muted text-center">MBBS,MD</span>
+                </div>
+            </div><!-- End -->
+            
+          </div><!-- End -->
+        </div>
+    </div>
+</section><!-- End -->
+
+
+
+<section id="services">
+  <div class="bg-primary text-center py-5 mb-4"style="max-height: 300px; overflow-y: auto;">
+      <div class="container">
+        <h1 class="fw-light text-white">Departments</h1>
+        <p class="overview">We are offering specialized sections with cutting-edge equipment to deliver complete medical treatments.</p>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col mb-4">
+        <div class="card border-0 shadow"style="max-height: 300px; overflow-y: auto;">
+          <img src="{% static 'img/service1.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center" >
+            <h5 class="card-title mb-0">Primary Care</h5>
+            <div class="card-text text-black-50">Our hospital provides comprehensive primary care services for individuals of all ages, ensuring their overall well-being..</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col mb-4">
+        <div class="card border-0 shadow"style="max-height: 300px; overflow-y: auto;">
+          <img src="{% static 'img/service2.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center" >
+            <h5 class="card-title mb-0">Dermatology</h5>
+            <div class="card-text text-black-50">Our hospital houses a renowned Dermatology Department, providing expert care for skin-related conditions.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col mb-4">
+        <div class="card border-0 shadow"style="max-height: 300px; overflow-y: auto;">
+          <img src="{% static 'img/service3.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center" >
+            <h5 class="card-title mb-0">Pediatric</h5>
+            <div class="card-text text-black-50">Our hospital's child care unit provides compassionate and specialized care for young patients.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col mb-4">
+        <div class="card border-0 shadow"style="max-height: 300px; overflow-y: auto;">
+          <img src="{% static 'img/service4.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center" >
+            <h5 class="card-title mb-0">Surgery</h5>
+            <div class="card-text text-black-50">Our hospital offers cutting-edge surgical interventions delivered by skilled specialists.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+  </div>
+  <style>
+    </style>
+</section>
+
+<section class="text-center conatiner" style="margin-block:200px;" id="reviews">
+    <h2>Satisfied Patients</h2>
+    <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" ></li>
+            <li data-target="#myCarousel" data-slide-to="2" ></li>
+        </ol>   
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">		
+            <div class="carousel-item active">
+                <div class="img-box"><img src="{% static 'img/patient1.jpg' %}" alt=""></div>
+                <p class="testimonial">Its a clean nice and a good place to walk around</p>      
+                <p class="overview">Srajan Dixit</p>
+            </div>
+            <div class="carousel-item ">
+                <div class="img-box"><img src="{% static 'img/patient2.png' %}" alt=""></div>
+                <p class="testimonial">Clean and Hygienic, but medicine and doctors are not punctual.</p>
+                <p class="overview">Abhinav Dwivedi</p>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'img/patient3.png' %}" alt=""></div>
+                <p class="testimonial">Good hospital, you can consider it as an Secondary Health care centre. But it has many good and experienced doctors., e.g. Pediatric, dentist, physician, eye specialist, homeopathic etc. It provide ambulance service in emergency.</p>
+                <p class="overview">Deepak Mishra</p>
+                
+            </div>		
+
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+          
+            <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="far fa-envelope text-primary fa-3x"></i>
+              <h4>Get In Touch</h4>
+              {% comment %} <title="Phone">Contact us +91234124523<br> {% endcomment %}
+              <p style="font-size: 18px; color: #333; font-weight: bold;">Contact us: <span style="font-size: 16px; color: #007bff;">+9123 412 4523</span></p>
+
+              <a href="mailto:railway@railway.com?subject=Hello&body=How are you?">Send us Email</a>
+
+            </div>
+          </div><!-- end col -->
+  
+          <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="fa fa-map-marker fa-3x text-primary"></i>
+              <h4>Our Location</h4>
+  
+              <address>
+                Mehndi Khera, Alambagh<br>Lucknow, Uttar Pradesh 226011<br>
+            </address>
+            </div>
+          </div><!-- end col -->
+  
+  
+  
+        </div>
+        <!-- end row -->
+  
+  
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.826776228796!2d80.88648819999996!3d26.81364375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfe97442fdd81%3A0xb14397a31b7cb6cc!2sRDSO%20Hospital%2C%20Mehndi%20Khera%2C%20Alambagh%2C%20Lucknow%2C%20Uttar%20Pradesh%20226011!5e0!3m2!1sen!2sin!4v1688452192177!5m2!1sen!2sin" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
+            </div>
+          </div><!-- end col -->
+  
+          <!-- Contact form -->
+          <div class="col-sm-6">
+            {% comment %} <form class="form-card" method="POST" action="{% url 'info' %}"> {% endcomment %}
+              
+            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+            {% csrf_token %}
+              <div class="form-group">
+                <label for="name2">Name</label>
+                <input class="form-control" id="name2" name="name" type="text" placeholder="Name">
+                <div class="error" id="err-name" style="display: none;">Please enter name</div>
+              </div> <!-- /Form-name -->
+  
+              <div class="form-group">
+                <label for="email2">Email</label>
+                <input class="form-control" id="email2" name="email" type="text" placeholder="Email">
+                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+              </div> <!-- /Form-email -->
+  
+              <div class="form-group">
+                <label for="message2">Message</label>
+                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="Enter your Message"></textarea>
+  
+                <div class="error" id="err-message" style="display: none;">Please enter message</div>
+              </div> <!-- /col -->
+  
+              <div class="row">            
+                  <button type="submit" class="btn btn-secondary btn-shadow btn-rounded w-md ml-3" id="send">Send</button>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+  
+            </form> <!-- /form -->
+          </div> <!-- end col --> 
+          
+         
+      </div>
+</section>
+
+
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends 'base2.html' %}
+
+{% block title %}Hospital Appointment System{% endblock title %}
+
+{% block body %}
+<div class="container">
+    
+    <h2 style="color:#333; font-family: Helvetica, Arial, sans-serif" class="text-center">Sign Up</h2>
+    
+    <div>
+    {% for message in messages%}
+    <h5>{{message}}</h5>
+    {% endfor %}
+    </div>
+    
+    <form method="POST" action="">
+      {% csrf_token %} 
+      <div class="mb-3">
+        <label for="username" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif">Username</label>
+        <input type="username" class="form-control" id="username" name="username" placeholder="Emp/Staff Id">
+      </div>
+   
+       <div class="mb-3">
+           <label for="email" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif">Email</label>
+           <input type="email" class="form-control" id="email" name="email" placeholder="abc@rdsohospitlal.in(organization mail-id)">
+         </div>
+   
+         <div class="mb-3">
+           <label for="password" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif">Password</label>
+           <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+         </div>
+         
+         <div class="mb-3">
+            <label for="password" style="font-weight: bold; font-family: Helvetica, Arial, sans-serif">Repeat your password</label>
+            <input type="password" class="form-control" id="password" name="password2" placeholder="Confirm Password">
+          </div>
+       {% comment %} <button class="btn btn-primary" type="submit">Sign Up</button> {% endcomment %}
+
+       <div class="d-flex justify-content-center">
+        <button class="btn btn-secondary" type="submit">Sign Up</button>
+      </div>
+
+       <div class="text-center mt-2">
+        <a href="{% url 'login' %}"style="font-weight: bold; font-family: Helvetica, Arial, sans-serif">Already have a account?</a>
+      </div>
+       
+       {% comment %} <a href="{% url 'login' %}">Login</a> {% endcomment %}
+
+
+      
+     </form>
+
+
+{% endblock body %}
